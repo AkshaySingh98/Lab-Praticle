@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 90%;
+            margin: auto;
+            height: 33rem;
+            text-align: center;
+            font-size: large;
+            background: #f9c3d6;
+            padding: 1px;
+            color: black;
+            border: 2px solid blue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .eee {
+            display: none;
+        }
+
+        button {
+            text-align: center;
+            justify-content: space-between;
+            width: 10rem;
+            height: 2rem;
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            margin-left: 32rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1> Employee Salary Table.</h1>
+    <table border="1 solid black">
+        <tbody>
+            <tr>
+                <th>SL No.</th>
+                <th>Name</th>
+                <th> UID </th>
+                <th>City</th>
+                <th>Job role</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td> 01 </td>
+                <td> Sachin Kumar </td>
+                <td> 20761 </td>
+                <td>Mithila</td>
+                <td> Developer </td>
+                <td>
+                    <input type="text" id="emp1" class="emp">
+                </td>
+            </tr>
+
+            <tr>
+                <td> 02 </td>
+                <td> Abhijeet Kumar</td>
+                <td> 20544 </td>
+                <td> Lucknow </td>
+                <td> Programmer </td>
+                <td>
+                    <input type="text" id="emp2" class="emp">
+                </td>
+            </tr>
+
+            <tr>
+                <td> 03 </td>
+                <td> Akash Kumar jha</td>
+                <td>20500</td>
+                <td>Madhubani</td>
+                <td>Analyst</td>
+                <td>
+                    <input type="text" id="emp3" class="emp">
+                </td>
+            </tr>
+            <tr>
+                <td> 04 </td>
+                <td> Shivam Raj</td>
+                <td>20564</td>
+                <td> Gaya </td>
+                <td> Coder </td>
+                <td>
+                    <input type="text" id="emp4" class="emp">
+                </td>
+            </tr>
+            <tr>
+                <td> 05 </td>
+                <td> Anand Mohan</td>
+                <td>20558</td>
+                <td> Chhapra </td>
+                <td> Developer </td>
+                <td>
+                    <input type="text" id="emp5" class="emp">
+                </td>
+            </tr>
+            <tr>
+                <td> 06 </td>
+                <td> Mukul kumar</td>
+                <td>20717</td>
+                <td> Bihar </td>
+                <td> Coder </td>
+                <td>
+                    <input type="text" id="emp6" class="emp">
+                </td>
+            </tr>
+            <tr>
+                <td> 07 </td>
+                <td> Navneet Pandey</td>
+                <td>20132</td>
+                <td> Betiah </td>
+                <td> Programmer </td>
+                <td>
+                    <input type="text" id="emp7" class="emp">
+                </td>
+            </tr>
+            <tr>
+                <td> 08 </td>
+                <td> Rajeev Kumar</td>
+                <td>20739</td>
+                <td> Bihar </td>
+                <td> Analyst </td>
+                <td>
+                    <input type="text" id="emp8" class="emp">
+                </td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>Harry</td>
+                <td>20559</td>
+                <td>Purnia</td>
+                <td>Developer</td>
+                <td><input type="text" id="emp9" class="emp" value="104500"></td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>Sumit Nayan</td>
+                <td>20706</td>
+                <td>Lakhisarai</td>
+                <td>Programmer</td>
+                <td><input type="text" id="emp10" class="emp" value="95000"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn1" onclick="show()">show</button>
+    <!-- <button class="btn2" onclick="hide()">Hide</button> -->
+
+
+    <script>
+        let data1 = 104500;   //dev
+        let data2 = 95000;   //pro
+        let data3 = 85000;   //ana
+        let data4 = 80000;   //coder
+        let data5 = 90000;
+        function show() {
+            let emp1 = (document.getElementById("emp1").value = data1);
+            let emp2 = (document.getElementById("emp2").value = data2);
+            let emp3 = (document.getElementById("emp3").value = data3);
+            let emp4 = (document.getElementById("emp4").value = data4);
+            let emp5 = (document.getElementById("emp5").value = data1);
+            let emp6 = (document.getElementById("emp6").value = data4);
+            let emp7 = (document.getElementById("emp7").value = data2);
+            let emp8 = (document.getElementById("emp8").value = data3);
+        }
+    // function hide() {
+    //   let emp1 = (document.getElementById("emp1").value = "");
+    //   let emp2 = (document.getElementById("emp2").value = "");
+    //   let emp3 = (document.getElementById("emp3").value = "");
+    //   let emp4 = (document.getElementById("emp4").value = "");
+    //   let emp5 = (document.getElementById("emp5").value = "");
+    //   let emp6 = (document.getElementById("emp6").value = "");
+    //   let emp7 = (document.getElementById("emp7").value = "");
+    //   let emp8 = (document.getElementById("emp8").value = "");
+    // }
+    </script>
+
+
+
+
+</body>
+
+</html>
